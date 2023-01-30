@@ -1,7 +1,7 @@
 app-id: com.github.AlizaMedicalImaging.AlizaMS
 runtime: org.kde.Platform
 sdk: org.kde.Sdk
-runtime-version: '5.15-21.08'
+runtime-version: 5.15-21.08
 command: alizams
 rename-desktop-file: alizams.desktop
 rename-appdata-file: alizams.metainfo.xml
@@ -16,9 +16,9 @@ cleanup:
   - /lib/cmake
   - '*.la'
   - '*.a'
-  - '/share/man'
-  - '/share/doc'
-  - '/share/ITK-5.2'
+  - /share/man
+  - /share/doc
+  - /share/ITK-5.2
 
 modules:
 
@@ -38,8 +38,8 @@ modules:
       - -DITK_FORBID_DOWNLOADS=ON
     sources:
       - type: archive
-        url: https://github.com/InsightSoftwareConsortium/ITK/archive/refs/tags/v5.2.1.tar.gz
-        sha256: 6022b2b64624b8bcec3333fe48d5f74ff6ebceb3bdf98258ba7d7fbbc76b99ab
+        url: https://github.com/InsightSoftwareConsortium/ITK/archive/refs/tags/v5.3.0.tar.gz
+        sha256: 44765abef522ca00c9418b956591ea36003889137e31c773abb1ab39c59b200f
         x-checker-data:
           type: anitya
           project-id: 223473
@@ -53,10 +53,9 @@ modules:
       - -DALIZA_QT_VERSION:STRING=5
       - -DMDCM_USE_SYSTEM_ZLIB:BOOL=ON
     post-install:
-      - desktop-file-edit --set-icon $FLATPAK_ID --set-key Exec --set-value
-        'alizams' /app/share/applications/alizams.desktop
-      - appstream-util modify /app/share/metainfo/alizams.metainfo.xml 
-        id com.github.AlizaMedicalImaging.AlizaMS
+      - desktop-file-edit --set-icon $FLATPAK_ID --set-key Exec --set-value 'alizams'
+        /app/share/applications/alizams.desktop
+      - appstream-util modify /app/share/metainfo/alizams.metainfo.xml id com.github.AlizaMedicalImaging.AlizaMS
     sources:
       - type: archive
         url: https://github.com/AlizaMedicalImaging/AlizaMS/archive/v1.8.3/AlizaMS-1.8.3.tar.gz
