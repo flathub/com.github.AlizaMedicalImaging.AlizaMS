@@ -1,7 +1,7 @@
 app-id: com.github.AlizaMedicalImaging.AlizaMS
 runtime: org.kde.Platform
 sdk: org.kde.Sdk
-runtime-version: 6.4
+runtime-version: '6.4'
 command: alizams
 rename-desktop-file: alizams.desktop
 rename-appdata-file: alizams.metainfo.xml
