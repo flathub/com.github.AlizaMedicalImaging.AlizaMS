@@ -13,12 +13,13 @@ finish-args:
   - --filesystem=home
 cleanup:
   - /include
-  - /lib/cmake
+  - /lib
   - '*.la'
   - '*.a'
   - /share/man
   - /share/doc
   - /share/ITK-5.3
+  - /bin/itkTestDriver
 
 modules:
 
