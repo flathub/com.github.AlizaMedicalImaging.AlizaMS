@@ -9,8 +9,11 @@ rename-icon: alizams
 finish-args:
   - --share=ipc
   - --socket=x11
+  - --socket=cups
   - --device=dri
   - --filesystem=home
+  - --filesystem=/media:ro
+  - --filesystem=/run/media:ro
 cleanup:
   - /include
   - /lib
@@ -59,7 +62,5 @@ modules:
       - appstream-util modify /app/share/metainfo/alizams.metainfo.xml id com.github.AlizaMedicalImaging.AlizaMS
     sources:
       - type: archive
-        url: https://github.com/AlizaMedicalImaging/AlizaMS/archive/v1.9.3/AlizaMS-1.9.3.tar.gz
-        sha256: 2f45f04cb13b7513b14d033f1ef73f13cdb79230ffd0052b2a129dd1843ec11f
-      - type: patch
-        path: fix-metainfo-1.9.3.patch
+        url: https://github.com/AlizaMedicalImaging/AlizaMS/archive/v1.9.5/AlizaMS-1.9.5.tar.gz
+        sha256: ca2fc0e52ac1c70ee485fe96b3840baf3911b12c84aed756493c40e1fe324c3f
