@@ -62,5 +62,5 @@ modules:
       - appstream-util modify /app/share/metainfo/alizams.metainfo.xml id com.github.AlizaMedicalImaging.AlizaMS
     sources:
       - type: archive
-        url: https://github.com/AlizaMedicalImaging/AlizaMS/archive/v1.9.5/AlizaMS-1.9.5.tar.gz
-        sha256: ca2fc0e52ac1c70ee485fe96b3840baf3911b12c84aed756493c40e1fe324c3f
+        url: https://github.com/AlizaMedicalImaging/AlizaMS/archive/v1.9.7/AlizaMS-1.9.7.tar.gz
+        sha256: 1e95c8029d9303ee7635c35500c28fc6c1f3dd8b04a6721cee8dcfda5e99e27a
