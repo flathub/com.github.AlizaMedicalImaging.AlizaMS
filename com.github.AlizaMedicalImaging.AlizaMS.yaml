@@ -59,8 +59,9 @@ modules:
       - -DMDCM_USE_SYSTEM_ZLIB:BOOL=ON
     post-install:
       - desktop-file-edit --set-icon $FLATPAK_ID --set-key Exec --set-value 'alizams' /app/share/applications/alizams.desktop
-      - appstream-util modify /app/share/metainfo/alizams.metainfo.xml id com.github.AlizaMedicalImaging.AlizaMS
     sources:
       - type: archive
-        url: https://github.com/AlizaMedicalImaging/AlizaMS/archive/v1.9.7/AlizaMS-1.9.7.tar.gz
-        sha256: 1e95c8029d9303ee7635c35500c28fc6c1f3dd8b04a6721cee8dcfda5e99e27a
+        url: https://github.com/AlizaMedicalImaging/AlizaMS/archive/v1.9.8/AlizaMS-1.9.8.tar.gz
+        sha256: 50a4a262bd8ec2f5aaf98bd332062d13fbecd7ef55f063dccd2fc2ea3f7e73fd
+      - type: patch
+        path: fix-metainfo-id.patch
