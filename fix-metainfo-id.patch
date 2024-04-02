@@ -19,7 +19,7 @@ index f5f66be..cd55ee8 100644
    </content_rating>
    <screenshots>
      <screenshot type="default">
-+      <caption>Main window</caption>
++      <caption>Main Window</caption>
        <image>https://raw.githubusercontent.com/AlizaMedicalImaging/AlizaMS/v1.9.8/package/art/alizams_scr1.jpg</image>
      </screenshot>
      <screenshot>
@@ -27,7 +27,7 @@ index f5f66be..cd55ee8 100644
        <image>https://raw.githubusercontent.com/AlizaMedicalImaging/AlizaMS/v1.9.8/package/art/alizams_scr2.jpg</image>
      </screenshot>
      <screenshot>
-+      <caption>Metadata viewer</caption>
++      <caption>Metadata Viewer</caption>
        <image>https://raw.githubusercontent.com/AlizaMedicalImaging/AlizaMS/v1.9.8/package/art/alizams_scr3.jpg</image>
      </screenshot>
    </screenshots>
