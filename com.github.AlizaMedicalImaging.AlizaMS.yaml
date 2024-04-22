@@ -39,7 +39,7 @@ modules:
       - -DITKGroup_Nonunit:BOOL=ON
       - -DBUILD_EXAMPLES:BOOL=OFF
       - -DITK_USE_SYSTEM_ZLIB:BOOL=ON
-      - -DITK_FORBID_DOWNLOADS=ON
+      - -DITK_FORBID_DOWNLOADS:BOOL=ON
       - -DITK_LEGACY_REMOVE:BOOL=ON
     sources:
       - type: archive
@@ -54,6 +54,7 @@ modules:
   - name: alizams
     buildsystem: cmake-ninja
     config-opts:
+      - -DALIZA_CXX_STANDARD:STRING=17
       - -DCMAKE_BUILD_TYPE:STRING=RelWithDebInfo
       - -DALIZA_QT_VERSION:STRING=6
       - -DMDCM_USE_SYSTEM_ZLIB:BOOL=ON
@@ -61,7 +62,7 @@ modules:
       - desktop-file-edit --set-icon $FLATPAK_ID --set-key Exec --set-value 'alizams' /app/share/applications/alizams.desktop
     sources:
       - type: archive
-        url: https://github.com/AlizaMedicalImaging/AlizaMS/archive/v1.9.8/AlizaMS-1.9.8.tar.gz
-        sha256: 50a4a262bd8ec2f5aaf98bd332062d13fbecd7ef55f063dccd2fc2ea3f7e73fd
+        url: https://github.com/AlizaMedicalImaging/AlizaMS/archive/v1.9.9/AlizaMS-1.9.9.tar.gz
+        sha256: 8fb46e1ae0f6cc6cb7d9263f5d16e40cb8dc59a517d0e56494c5d8e1726d46e3
       - type: patch
         path: fix-metainfo-id.patch
