@@ -1,7 +1,7 @@
 app-id: com.github.AlizaMedicalImaging.AlizaMS
 runtime: org.kde.Platform
 sdk: org.kde.Sdk
-runtime-version: '6.5'
+runtime-version: '6.6'
 command: alizams
 rename-desktop-file: alizams.desktop
 rename-appdata-file: alizams.metainfo.xml
@@ -50,6 +50,8 @@ modules:
           project-id: 223473
           stable-only: true
           url-template: https://github.com/InsightSoftwareConsortium/ITK/archive/refs/tags/v$version.tar.gz
+      - type: patch
+        path: itk-gcc13.patch
 
   - name: alizams
     buildsystem: cmake-ninja
