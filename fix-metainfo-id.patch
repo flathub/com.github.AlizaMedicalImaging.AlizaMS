@@ -1,5 +1,5 @@
 diff --git a/package/archive/usr/share/metainfo/alizams.metainfo.xml b/package/archive/usr/share/metainfo/alizams.metainfo.xml
-index f94e202..323d9b4 100644
+index e9399b5..9dc1d71 100644
 --- a/package/archive/usr/share/metainfo/alizams.metainfo.xml
 +++ b/package/archive/usr/share/metainfo/alizams.metainfo.xml
 @@ -1,7 +1,7 @@
@@ -7,7 +7,7 @@ index f94e202..323d9b4 100644
  <component type="desktop-application">
 -  <id>alizams.desktop</id>
 -  <launchable type="desktop-id">alizams.desktop</launchable>
-+  <id>>com.github.AlizaMedicalImaging.AlizaMS</id>
++  <id>com.github.AlizaMedicalImaging.AlizaMS</id>
 +  <launchable type="desktop-id">com.github.AlizaMedicalImaging.AlizaMS.desktop</launchable>
    <name>Aliza MS</name>
    <developer id="com.github.AlizaMedicalImaging">
