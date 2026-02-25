@@ -43,8 +43,8 @@ modules:
       - -DITK_LEGACY_REMOVE:BOOL=ON
     sources:
       - type: archive
-        url: https://github.com/InsightSoftwareConsortium/ITK/archive/refs/tags/v5.4.4.tar.gz
-        sha256: 683027617442391220eb79869d71652a54c4b47517ca6ca14d4b01c2583f5a1c
+        url: https://github.com/InsightSoftwareConsortium/ITK/archive/refs/tags/v6.0b02.tar.gz
+        sha256: 5f07c5b22067861d47d758c125008f2d2b9be46036e0a4df59951df25e85bb17
         x-checker-data:
           type: anitya
           project-id: 223473
@@ -59,7 +59,8 @@ modules:
       - -DALIZA_QT_VERSION:STRING=6
       - -DMDCM_USE_SYSTEM_ZLIB:BOOL=ON
     post-install:
-      - desktop-file-edit --set-icon $FLATPAK_ID --set-key Exec --set-value 'alizams' /app/share/applications/alizams.desktop
+      - desktop-file-edit --set-icon $FLATPAK_ID --set-key Exec --set-value 'alizams'
+        /app/share/applications/alizams.desktop
     sources:
       - type: archive
         url: https://github.com/AlizaMedicalImaging/AlizaMS/archive/v1.9.10/AlizaMS-1.9.10.tar.gz
