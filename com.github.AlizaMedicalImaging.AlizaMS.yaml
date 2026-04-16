@@ -62,7 +62,7 @@ modules:
       - desktop-file-edit --set-icon $FLATPAK_ID --set-key Exec --set-value 'alizams' /app/share/applications/alizams.desktop
     sources:
       - type: archive
-        url: https://github.com/AlizaMedicalImaging/AlizaMS/archive/v1.9.11/AlizaMS-1.9.11.tar.gz
-        sha256: 8153a662d1f577bc829ee18c0093ff0fd28d6fc6135fb3598b6c7fcb7448fa3a
+        url: https://github.com/AlizaMedicalImaging/AlizaMS/archive/v1.9.12/AlizaMS-1.9.12.tar.gz
+        sha256: 8ae71d8dd58145aa548465e1bafa7f1ea4cb7d96a4bb4599bdb957cf572a8678
       - type: patch
         path: fix-metainfo-id.patch
