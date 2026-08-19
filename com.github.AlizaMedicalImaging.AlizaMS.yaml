@@ -1,7 +1,7 @@
 app-id: com.github.AlizaMedicalImaging.AlizaMS
 runtime: org.kde.Platform
 sdk: org.kde.Sdk
-runtime-version: '6.10'
+runtime-version: '6.11'
 command: alizams
 rename-desktop-file: alizams.desktop
 rename-appdata-file: alizams.metainfo.xml
@@ -62,7 +62,7 @@ modules:
       - desktop-file-edit --set-icon $FLATPAK_ID --set-key Exec --set-value 'alizams' /app/share/applications/alizams.desktop
     sources:
       - type: archive
-        url: https://github.com/AlizaMedicalImaging/AlizaMS/archive/v1.10.0/AlizaMS-1.10.0.tar.gz
-        sha256: fdb0a36fa109b756eceed373f4c41a91270d3c2438a7aef6f31c82775c5d6cc3
+        url: https://github.com/AlizaMedicalImaging/AlizaMS/archive/v1.10.3/AlizaMS-1.10.3.tar.gz
+        sha256: a0248992fe439eccc071c613cfc1c840359ca1fdca874cf98c80c29f29ec0f28
       - type: patch
         path: fix-metainfo-id.patch
